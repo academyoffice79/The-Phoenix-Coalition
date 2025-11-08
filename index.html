@@ -15,21 +15,37 @@
             <span class="site-title">The Phoenix Coalition</span>
         </a>
 
-        <nav class="nav-links" role="navigation" aria-label="Main navigation">
-            <a href="#about">Preamble</a>
-            <a href="#platform">Platform Statements</a>
-            <a href="#events">Events</a>
+        <!-- CSS-only toggle: hidden checkbox + label. Keeps functionality without JS. -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="nav-toggle" aria-hidden="false">☰</label>
+
+        <nav id="main-navigation" class="nav-links" role="navigation" aria-label="Main navigation">
+            <a href="#preamble">Preamble</a>
+            <!-- CSS-only dropdown: shows on hover/focus on desktop, opens inside mobile menu when visible -->
+            <div class="dropdown" tabindex="0">
+                <a href="#platform" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Policy Planks</a>
+                <div class="dropdown-menu" role="menu" aria-label="Policy Planks">
+                    <a href="#platform" role="menuitem">Economy</a>
+                    <a href="#platform" role="menuitem">Foreign Policy</a>
+                    <a href="#platform" role="menuitem">Immigration</a>
+                    <a href="#platform" role="menuitem">Criminal Justice Reform</a>
+                    <a href="#platform" role="menuitem">Healthcare and Drug Policy</a>
+                    <a href="#platform" role="menuitem">Abortion</a>
+                    <a href="#platform" role="menuitem">2nd Amendment</a>
+                    <a href="#platform" role="menuitem">Education</a>
+                    <a href="#platform" role="menuitem">Environment</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
-
-        <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false"
-            aria-label="Toggle navigation">☰</button>
     </header>
 
     <main>
+        <h1 class="title">The Phoenix Coalition</h1>
         <section class="section">
             <div id="preamble" class="container">
-                <h2>Preamble</h2>
+                <h2>Preamble of the Party</h2>
                 <p>Welcome to The Phoenix Coalition. Our mission is to build a better future through innovative policies
                     and inclusive governance. The Phoenix Coalition believes that lasting freedom comes not from
                     constant upheaval, but from rebuilding with discipline, fairness, and purpose.
@@ -66,7 +82,7 @@
             </div>
         </section>
 
-        <section id="events" class="section">
+        <section id="about" class="section">
             <div class="container">
                 <h2>Events</h2>
                 <div class="events-grid">
@@ -91,8 +107,6 @@
             </div>
         </section>
     </main>
-
-    <script src="main.js"></script>
 
 </body>
 

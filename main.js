@@ -1,9 +1,2 @@
-(function(){
-    const btn = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav-links');
-    if(!btn || !nav) return;
-    btn.addEventListener('click', function(){
-        const isOpen = nav.classList.toggle('show');
-        btn.setAttribute('aria-expanded', String(isOpen));
-    });
-})();
+/* main.js intentionally left blank — navbar toggle is implemented using a CSS-only pattern (checkbox + label).
+   This file is no longer required but kept as a placeholder in the repo. */
